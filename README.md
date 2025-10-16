@@ -13,6 +13,17 @@ A professional tool to flatten any GitHub repository into a single, beautiful HT
 - 📱 **Fully responsive** design
 
 ## 🚀 Quick Start
+```bash
+pip install mdgithub
+```
+
+or 
+```bash
+pixi add mdgithub
+```
+
+
+## Using 
 
 ```bash
 # Using pixi
