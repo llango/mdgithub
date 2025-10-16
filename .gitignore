@@ -6,6 +6,6 @@
 
 .ruff_cache/*
 
-dist/*
+dist/
 
-output/*
+output/
