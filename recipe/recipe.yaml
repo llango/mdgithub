@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.1.4"
 
 package:
   name: mdgithub
@@ -9,9 +9,9 @@ source:
   path: ..
 
 build:
-  number: 0
-  script: pip install . -vv
+  number: 3
   noarch: python
+  script: pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -22,6 +22,13 @@ requirements:
     - python >=3.8
     - pygments >=2.15.0
     - markdown >=3.4.0
+
+tests:
+  - python:
+      imports:
+        - mdgithub
+  - script:
+      - mdgithub --help
 
 about:
   homepage: https://github.com/llango/mdgithub

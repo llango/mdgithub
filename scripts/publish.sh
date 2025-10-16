@@ -72,7 +72,7 @@ case $choice in
     3)
         echo -e "\n${BLUE}📤 Publishing to prefix.dev...${NC}"
         pixi install -e conda
-        pixi run -e conda publish-conda
+        pixi run -e conda publish-prefix
         echo -e "${GREEN}✅ Published to prefix.dev${NC}"
         ;;
     4)
@@ -80,7 +80,7 @@ case $choice in
         pixi run -e dev publish-pypi
         echo -e "\n${BLUE}📤 Publishing to prefix.dev...${NC}"
         pixi install -e conda
-        pixi run -e conda publish-conda
+        pixi run -e conda publish-prefix
         echo -e "${GREEN}✅ Published to all platforms${NC}"
         ;;
     5)

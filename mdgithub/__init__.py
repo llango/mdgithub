@@ -11,7 +11,6 @@ import html
 import os
 import pathlib
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -2197,21 +2196,21 @@ def main() -> None:
     total_size = sum(i.size for i in infos if i.decision.include)
 
     print(f"\n{'='*60}")
-    print(f"✅ Success! Generated professional repository viewer")
+    print("✅ Success! Generated professional repository viewer")
     print(f"{'='*60}")
-    print(f"📈 Statistics:")
+    print("📈 Statistics:")
     print(f"   • Files rendered: {rendered_count}")
     print(f"   • Total size: {bytes_human(total_size)}")
     print(f"   • Output file: {output_path.absolute()}")
     print(f"   • File size: {bytes_human(output_path.stat().st_size)}")
-    print(f"\n🎯 Features:")
-    print(f"   • 👁️  Human-readable view with syntax highlighting")
-    print(f"   • 🤖 LLM-optimized CXML format")
-    print(f"   • 🌳 Directory tree visualization")
-    print(f"   • 🔍 Real-time search (Ctrl+K)")
-    print(f"   • 📋 One-click copy functionality")
-    print(f"   • 📱 Fully responsive design")
-    print(f"   • 🖼️  Fixed: Markdown images with relative paths now display!")
+    print("\n🎯 Features:")
+    print("   • 👁️  Human-readable view with syntax highlighting")
+    print("   • 🤖 LLM-optimized CXML format")
+    print("   • 🌳 Directory tree visualization")
+    print("   • 🔍 Real-time search (Ctrl+K)")
+    print("   • 📋 One-click copy functionality")
+    print("   • 📱 Fully responsive design")
+    print("   • 🖼️  Fixed: Markdown images with relative paths now display!")
     print(f"{'='*60}\n")
 
     if not args.no_browser:
