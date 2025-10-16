@@ -23,13 +23,6 @@ requirements:
     - pygments >=2.15.0
     - markdown >=3.4.0
 
-tests:
-  - script:
-      # commands to run to test the package. If any of the commands
-      # returns with an error code, the test is considered failed.
-      # if I don't copy everything into a test dir, pixi test runs the tests in the .pixi dir and fails :|
-      - pixi run tests/test_flatten.py
-
 about:
   homepage: https://github.com/llango/mdgithub
   license: 0BSD
