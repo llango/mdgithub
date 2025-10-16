@@ -28,7 +28,7 @@ dev = [
 ]
 
 [project.scripts]
-repo-viewer = "github_repo_viewer.cli:cli"
+repo-viewer = "mdgithub.cli:cli"
 
 [project.urls]
 Homepage = "https://github.com/llango/mdgithub"
